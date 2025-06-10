@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: coinbase-rsi-bot
+    env: python
+    buildCommand: ""
+    startCommand: "python main.py"
+    envVars:
+      - key: COINBASE_API_KEY
+        value: your_key_here
+      - key: COINBASE_API_SECRET
+        value: your_secret_here
+      - key: COINBASE_API_PASSPHRASE
+        value: your_passphrase_here
